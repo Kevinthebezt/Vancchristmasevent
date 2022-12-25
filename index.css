@@ -1,0 +1,302 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body{
+    background-image: url(./Noel\ bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slider img {
+    height: 500px;
+}
+
+.slider {
+    margin-top: 35px;
+}
+
+.header {
+    border: 1px solid #e84938;
+    display: flex;
+    justify-content: left;
+    position: fixed;
+    background-color: #ffffff;   
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+    z-index: 10;
+}
+
+.nav-list {
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #0e152c;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.nav-list:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Home */
+
+.description {
+    text-align: center;
+    padding: 20px 300px;
+
+}
+
+.description h3 {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(28, 31, 241);
+
+}
+
+.description h1 {
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ef4723;
+}
+
+.description p {
+    font-size: 18px;
+}
+
+/* About us */
+
+.about {
+    text-align: center;
+    margin-top: 100px;
+
+}
+
+.about p {
+    margin: 20px 200px;
+    font-size: 18px;
+}
+
+.about h1 {
+    color: #2d6b3a;
+}
+
+/* Location */
+.location {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.location h1 , .location h2 {
+    color: #004799;
+    padding-top: 20px;
+}
+
+.location h3 {
+    padding-bottom: 20px;
+}
+
+.location p {
+    padding: 0px 300px;
+    font-size: 18px;
+}
+
+/* Time */
+
+.time h1 {
+    color: #ce802d;
+}
+
+.time {
+    text-align: center;
+    padding: 120px 350px;
+}
+
+.time ul {
+    list-style-type: none;
+}
+
+.time ul, .time p {
+    padding-top: 20px
+}
+
+.time p {
+    font-size: 18px;
+}
+
+/* Contact */
+
+.contact h1 {
+    color: #884a1e;
+}
+
+.contact h1, .contact-quote {
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* .contact-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.contact-form-input-row2 input {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.form-button {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    float: right;
+} */
+
+.contact-container {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(137, 207, 253);
+    padding: 20px 10px;
+    margin: auto;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    background: #ecf6ff;
+}
+
+input:focus {
+    outline: 2px solid #bffff0;
+}
+
+button {
+    background:#ecf6ff;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.icon-container {
+    padding-left: 200px;
+}
+
+.icon {
+    font-size: 50px !important;
+    color:#1b74e4;
+}
+
+.fa-envelope {
+    font-size: 55px !important;
+    color: #383838;
+}
+
+.fa-instagram {
+    font-size: 55px !important;
+    color: #ff3ade;
+}
+
+/* Keyframes */
+#Opening {
+    animation: wiggle 2s linear infinite;
+}
+  
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-10deg);
+    }
+    20% {
+      transform: rotateZ(7deg);
+    }
+    25% {
+      transform: rotateZ(-7deg);
+    }
+    30% {
+      transform: rotateZ(4deg);
+    }
+    35% {
+      transform: rotateZ(-3deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+}
+
+#about-title, #time-title {
+    animation: blink 2s linear infinite;
+}
+
+#location-title, #contact-title {
+    animation: blink2 2s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink2 {
+    0% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.3;
+    }
+}
+
+/* Footer */
+
+.footer {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    text-align: center;
+    opacity: 0.9;
+}

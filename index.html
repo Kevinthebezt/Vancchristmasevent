@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vancouver Christmas Event</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+
+<body>
+    <div id="home" class="container">
+        <div class="header">
+            <a href="#home" class="nav-list" id="btn">Home</a>
+            <a href="#about" class="nav-list" id="btn">About us</a>
+            <a href="#location" class="nav-list" id="btn">Location</a>
+            <a href="#time" class="nav-list" id="btn">Time</a>
+            <a href="#contact" class="nav-list" id="btn">Contact</a>
+        </div>
+        <div class="slider">
+            <img src="img/1.png" width="100%" class="slideshow">
+            <img src="img/2.jpg" width="100%" class="slideshow">
+            <img src="img/3.jpg" width="100%" class="slideshow">
+            <script>
+                w3.slideshow(".slideshow", 2000)
+            </script>
+        </div>
+    </div>
+    <!-- Home -->
+    <div class="description">
+        <h1 id="Opening">Merry Christmas</h1>
+        <h3><i>X-mas event</i></h3>
+        <p>Christmas waves a magic wand over this world, making everything softer than snowflakes and all the more
+            beautiful. Wish you a magical Christmas, my friend!</p>
+    </div>
+
+    <!-- About us -->
+    <div id="about" class="about">
+        <h1 id="about-title">About us</h1>
+        <p>Each year, we bring this festive Old World tradition to everone. This cherished holiday event offers an
+            authentic German feast for the senses. Stroll the twinkling pathways of a European-inspired Christmas
+            village in the crisp winter air.</p>
+        <p>Combining colourful décor, authentic gifts, enticing food and drink, and family entertainment, this Yuletide
+            celebration creates the perfect atmosphere to mix and mingle with friends and family, have a quick lunch or
+            after-work drink, find a festive photo op, and take in a wide variety of holiday entertainment!</p>
+    </div>
+
+    <!-- Location -->
+    <div id="location" class="location">
+        <h1 id="location-title">Location</h1>
+        <p>Jack Poole Plaza</p>
+        <p>1055 Canada Place (home of the Olympic Cauldron)</p>
+        <p>Vancouver, British Columbia</p>
+        <img src="./img/Location.png" alt="">
+        <h2>How to get there?</h2>
+        <h3 style="padding-top: 20px; padding-bottom: 20px;"><i>By public transport</i></h3>
+        <p>We highly recommend you come to Jack Poole plaza by public transportation using the SkyTrain, SeaBus or Bus.
+            Most lines are coming through Waterfront Station. </p>
+        <h3 style="padding-top: 20px; padding-bottom: 20px;"><i>By Car</i></h3>
+        <p>BY CAR:
+            If you choose to drive Jack Poole Plaza please make sure you use our special parking rates at the Marriott
+            Pinnacle Downtown - 1128 West Hastings Street, Vancouver, British Columbia Canada, V6E 4R5</p>
+    </div>
+
+    <!-- Time -->
+    <div id="time" class="time">
+        <h1 id="time-title">Time</h1>
+        <p>The Vancouver Christmas Market will be open daily from November 12 to December 24 at Jack Poole Plaza.</p>
+        <ul>
+            <li><b>📅Nov 12 - 25: open 4:00 pm to 9:30 pm 🕓 (Fri and Sat until 10:00 pm 🕙)</b></li>
+            <li><b>📅Nov 26 - Dec 23: open 11:30 am to 9:30 pm 🕦 (Fri and Sat until 10:00 pm 🕙)</b></li>
+            <li><b>📅Dec 24: open 12:00 am to 6:00 pm 🕛 </b></li>
+        </ul>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact" class="contact">
+        <h1 id="contact-title">CONTACT</h1>
+        <p class="contact-quote"><i>Want to share us some ideas or opinion? Drop it here</i></p>
+        <div class="icon-container">
+            <a href="https://www.facebook.com/profile" target="_blank">
+                <i class="fa fa-facebook-square icon" aria-hidden="true"></i>
+            </a>
+            <a href="https://mail.google.com" target="_blank">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+        </div>
+        <!-- <div class="contact-container">
+            <div class="contact-items">
+                <p>Vancouver, Canada</p>
+                <p> Phone: +00 9009009</p>
+                <p> Email: VancouverEvent@mail.com</p>
+            </div>
+            <div class="contact-items">
+                <div class="contact-form-input-row1">
+                    <input id="Name" type="text" placeholder="Name">
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="contact-form-input-row2">
+                    <input type="text" placeholder="Share here">
+                </div>
+                <button class="form-button">Submit</button>
+            </div>
+        </div> -->
+        <div class="contact-container">
+            <h2>Contact Form</h2>
+            <form id="form-login">
+                <input type="text" id="name" placeholder="Name">
+                <input type="text" id="email" placeholder="Email">
+                <input type="text" id="share" placeholder="Share here">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <img src="https://www.vmcdn.ca/f/files/via/import/2017/11/09140305_vandusen-garden-festival-lights-16.jpg;w=960" width="100%">
+
+    <div class="footer">
+        <p>🎅Powered by Nguyễn Cao Kiến Văn🎅</p>
+        <p>©2022 Vancouver Christmas Event</p>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
